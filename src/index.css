@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cream text-ink font-sans font-light;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-terracotta hover:bg-terracotta-hover text-white font-medium px-6 py-3 rounded-full transition-all hover:-translate-y-0.5 hover:shadow-lg;
+  }
+
+  .card {
+    @apply bg-surface-white rounded-3xl border border-border p-6 shadow-sm;
+  }
+
+  .pill {
+    @apply bg-terracotta-tint text-terracotta text-sm px-4 py-1 rounded-full font-medium;
+  }
+}
